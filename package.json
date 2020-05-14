@@ -1,0 +1,23 @@
+{
+  "name": "quantidade-habitantes-municipios",
+  "version": "1.0.0",
+  "description": "Essa é uma api para obter uma quantidade estimada de habitantes por municipios no Brasil",
+  "main": "index.js",
+  "author": "Bryan Diniz (obraia)",
+  "license": "MIT",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "esm": "^3.2.25",
+    "express": "^4.17.1",
+    "mongoose": "^5.9.13",
+    "pm2": "^4.4.0"
+  },
+  "devDependencies": {
+    "dotenv": "^8.2.0",
+    "nodemon": "^2.0.3"
+  },
+  "scripts": {
+    "dev": "nodemon ./src/index.js",
+    "start": "pm2 start ./src/index.js --watch --no-daemon --node-args=\"-r esm\""
+  }
+}
